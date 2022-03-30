@@ -1,8 +1,12 @@
 import { createApp } from "vue";
+import Antd from "ant-design-vue";
+import "ant-design-vue/dist/antd.css";
+import "./assets/style/global.css";
+
 import App from "./App.vue";
-import HelloWorld from "./components/HelloWorld.vue";
 
 const app = createApp(App);
+app.use(Antd);
 app.config.warnHandler = (msg, instance, trace) => {
   console.warn("警告记录");
   console.warn("警告信息：", msg);
@@ -15,5 +19,4 @@ app.config.errorHandler = (err, instance, info) => {
   console.error("实例：", instance);
   console.error("信息：", info);
 };
-app.component("HelloWorld", HelloWorld);
 app.mount("#app");

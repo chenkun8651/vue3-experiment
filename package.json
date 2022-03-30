@@ -1,17 +1,21 @@
 {
-  "name": "game_talk",
+  "name": "vue3-experiment",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "ant-design-vue": "^2.2.8",
     "vue": "^3.2.25"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
   }
 }
